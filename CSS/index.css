@@ -1,0 +1,159 @@
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+nav {
+display: flex;
+justify-content: space-around;
+align-items: center;
+min-height: 8vh;
+background-color: grey;
+}
+
+.logo {
+color: white;
+text-transform: uppercase;
+font-size:25px;
+}
+
+.nav-links{
+display: flex;
+justify-content: space-around;
+width: 30%;
+}
+
+.nav-links a{
+color: white;
+text-decoration: none;
+letter-spacing: 3px;
+font-weight: bold;
+font-size: 20px;
+}
+
+.nav-links li{
+list-style: none;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+.burger{
+display: none;
+cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+.nav-links{
+  width: 60%;
+  }
+}
+
+@media screen and (max-width:768px){
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+  }
+
+  .burger{
+    display: block;
+  }
+
+  .langauge-section{
+    display: flex;
+    flex-direction: column;
+    margin: 50px
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+.hero{
+background-image: url(../Images/mountain.jpg);
+height: 100vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.langauge-section{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+min-height: 50vh;
+margin: 50px
+}
+
+.javascript{
+background-image: url(../Images/javascript.png);
+background-size: contain;
+flex:1;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.html{
+  background-image: url(../Images/html.png);
+  background-size: contain;
+  flex:1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.C_sharp{
+  background-image: url(../Images/csharp_logo.png);
+  background-size: contain;
+  flex:1;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.c_sharp_text{
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  padding-left: 40px;
+}
+
+.javascript_text{
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.html_text{
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  padding-right: 30px;
+}
